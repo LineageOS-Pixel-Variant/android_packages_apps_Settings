@@ -194,6 +194,7 @@ public class MobileNetworkSettings extends AbstractMobileNetworkSettings {
         use(ContactDiscoveryPreferenceController.class).init(getParentFragmentManager(), mSubId,
                 getLifecycle());
         use(NrAdvancedCallingPreferenceController.class).init(mSubId);
+        use(ForceLteCaPreferenceController.class).init(mSubId);
     }
 
     @Override
